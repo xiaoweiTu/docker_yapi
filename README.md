@@ -1,6 +1,6 @@
 # 如何使用
 
-1. 拉取此项目
+1. 拉取此项目  git clone https://github.com/xiaoweiTu/docker_yapi.git  yapi
 2. docker-composer -up -d
 3. 浏览器访问 你的虚拟机ip:9090
 4. 输入相关信息，mongodb的地址输入 mongodb 即可连接
