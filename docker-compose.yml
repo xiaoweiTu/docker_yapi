@@ -1,0 +1,23 @@
+version: "3"
+services:
+        node:
+          build: ./
+          tty: true
+          container_name: node
+          networks:
+             - default
+          ports:
+             - "9090:9090"
+             - "3000:3000"
+        mongodb:
+          image: mongo:latest
+          container_name: mongodb
+          ports:
+             - "27018:27017"
+          volumes:
+             - $PWD/data/mongo:/data/db:rw
+          restart: always
+          networks:
+             - default
+networks:
+  default:
