@@ -6,7 +6,7 @@ git clone https://github.com/xiaoweiTu/docker_yapi.git  yapi
 
 cd yapi
 
-docker-composer up -d
+docker-compose up -d
 ```
 2. 浏览器访问 你的虚拟机ip:9090
 3. 输入相关信息，mongodb的地址输入 mongodb 即可连接
